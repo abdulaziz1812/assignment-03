@@ -8,6 +8,18 @@
     <!-- Tailwind & daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: '#E7C1D3',
+                        aqua: '#A4DAC3',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,7 +129,7 @@
                                 atmosphere.
                             </p>
                             <div
-                                class="flex justify-center py-2 px-6 gap-1 rounded-full bg-lime-100 border-none max-w-sm md:w-fit mx-auto">
+                                class="flex justify-center items-center py-2 px-6 gap-1 rounded-full bg-lime-100 border-none max-w-sm md:w-fit mx-auto">
                                 <a class="text-xl font-extrabold">View Details</a>
                                 <div class="bg-lime-400 rounded-full p-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -145,7 +157,7 @@
                         <img class="hidden lg:block" src="./image/Vector.png" alt="">
                     </div>
                     <div class="flex justify-center lg:justify-start">
-                        <div class="btn bg-white rounded-full">
+                        <div class="btn bg-white rounded-full h-9 min-h-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -155,7 +167,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-4 mt-1">
-                        <h1 class="text-3xl lg:text-4xl font-extrabold text-center md:text-left my-4 md:my-0">We design thoughtful,
+                        <h1 class="text-3xl lg:text-4xl font-extrabold text-center md:text-left my-4 md:my-0">We design
+                            thoughtful,
                             <br>
                             liveable spaces
                         </h1>
@@ -188,6 +201,79 @@
                 </div>
             </div>
         </Section>
+        <!-- Our work section  -->
+        <section class="bg-gray-200  py-8 md:py-24">
+            <div class="container mx-auto">
+                <!-- button -->
+                <div class="flex justify-center mb-4">
+                    <div class="btn bg-white rounded-full h-9 min-h-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        <button class="font-bold">How we works </button>
+                    </div>
+                </div>
+
+                <!-- Details -->
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold text-center mb-6">Our Works Process</h1>
+                    <p class="text-center">The barn house captivates with its blend of rustic charm and modern
+                        sophistication,
+                        <br>
+                        featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+                <!-- Card -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-5">
+                    <!-- card-1  -->
+                    <div class="card bg-lavender p-6 flex items-start">
+                        <figure class="">
+                            <img class="" src="./image/concept.png" alt="concept" />
+                        </figure>
+                        <div class="card-body p-0">
+                            <h2 class="card-title font-extrabold text-xl">Concept</h2>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                        </div>
+                    </div>
+                    <!-- card-2  -->
+                    <div class="card bg-yellow-200 p-6 flex items-start">
+                        <figure class="">
+                            <img class="" src="./image/flow-chart.png" alt="design" />
+                        </figure>
+                        <div class="card-body p-0">
+                            <h2 class="card-title font-extrabold text-xl">Design Process</h2>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                        </div>
+                    </div>
+                    <!-- card-3    -->
+                    <div class="card bg-aqua p-6 flex items-start">
+                        <figure class="">
+                            <img class="" src="./image/vision.png" alt="Super vision" />
+                        </figure>
+                        <div class="card-body p-0">
+                            <h2 class="card-title font-extrabold text-xl">Supervision</h2>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card bg-blue-400 p-6 flex items-start">
+                        <figure class="">
+                            <img class="" src="./image/budgetplanning.png" alt="Budget Planning" />
+                        </figure>
+                        <div class="card-body p-0">
+                            <h2 class="card-title font-extrabold text-xl">Budget Planning</h2>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
