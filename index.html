@@ -49,7 +49,7 @@
                                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </div>
-                        <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+                        <a class="btn btn-ghost text-3xl font-extrabold px-2">Rinterio</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
@@ -150,29 +150,28 @@
     <main>
         <!-- About us section -->
         <Section class="bg-gray-200  py-8 md:py-24 px-5">
-            <div class="container mx-auto lg:flex gap-8 ">
+            <div class="container mx-auto">
                 <!-- text side  -->
-                <div class="relative ">
-                    <div class="absolute -top-12 -left-12">
-                        <img class="hidden lg:block" src="./image/Vector.png" alt="">
-                    </div>
-                    <div class="flex justify-center lg:justify-start">
-                        <div class="btn bg-white rounded-full h-9 min-h-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                            <button class="font-bold">About Us</button>
+                <div class="relative flex flex-col lg:flex-row justify-between">
+                    <div class="flex flex-col lg:justify-between gap-4 lg:w-1/2">
+                        <div class="absolute -top-12 -left-12">
+                            <img class="hidden lg:block" src="./image/Vector.png" alt="">
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-4 mt-1">
-                        <h1 class="text-3xl lg:text-4xl font-extrabold text-center md:text-left my-4 md:my-0">We design
-                            thoughtful,
+                        <div class="flex justify-center lg:justify-start">
+                            <div class="flex bg-white rounded-full px-4 py-2 max-w-fit ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                </svg>
+                                <button class="font-bold">About Us</button>
+                            </div>
+                        </div>
+                        <h1 class="text-3xl lg:text-4xl font-extrabold text-center md:text-left mb-2">We design thoughtful,
                             <br>
                             liveable spaces
                         </h1>
-                        <p>The barn house captivates with its blend of rustic charm and modern
+                        <p class="text-center lg:text-left">The barn house captivates with its blend of rustic charm and modern
                             sophistication, featuring
                             weathered wood, sleek metal accents.</p>
                         <div>
@@ -193,11 +192,12 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-                <!-- image side -->
-                <div class="flex lg:justify-stretch mt-6 lg:mt-0 lg:h-auto">
-                    <img src="./image/rectangle.png" alt="">
+                    <!-- image side -->
+                    <div class="mt-6 lg:mt-0 ">
+                        <img class="w-full h-56 md:h-96 object-cover rounded-2xl lg:h-auto " src="./image/rectangle.png" alt="">
+                    </div>
                 </div>
             </div>
         </Section>
@@ -379,7 +379,8 @@
             </div>
         </section>
         <!-- Let’s Discuss Section -->
-        <section class="bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat py-8 md:py-24 lg:px-56 px-5 border-white border-8">
+        <section
+            class="bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat py-8 md:py-24 lg:px-56 px-5 border-white border-8">
             <div class="container mx-auto">
                 <!-- button -->
                 <div class="flex justify-center mb-4">
@@ -408,7 +409,8 @@
                     <input class="rounded-full p-4" type="text" name="" id="" placeholder="Last Name*">
                     <input class="rounded-full p-4" type="text" name="" id="" placeholder="Phone Number*">
                     <input class="rounded-full p-4" type="text" name="" id="" placeholder="Email Address*">
-                    <textarea class="rounded-3xl md:col-span-2 text-slate-400 p-5 resize-none" name="" rows="6" id="">Write your message here</textarea>
+                    <textarea class="rounded-3xl md:col-span-2 text-gray-400 p-5 resize-none" name="" rows="6"
+                        id="">Write your message here</textarea>
                 </div>
                 <!-- button   -->
                 <div class="btn rounded-full bg-lime-400 border-none font-extrabold w-full ">
@@ -425,8 +427,46 @@
         </section>
 
     </main>
+    <!-- footer start  -->
     <footer>
+        <footer class="footer footer-center bg-black text-base-content text-white rounded p-10 gap-0 py-24">
+            <!-- logo  -->
+            <div class="flex flex-row mb-2">
+                <div class="bg-lime-400 rounded-full p-2 font-extrabold text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <a class="btn btn-ghost text-3xl font-extrabold px-0">Rinterio</a>
+            </div>
+            <p class="mb-12 text-gray-400">The barn house captivates with its blend of rustic charm and modern
+                sophistication,
+                <br>
+                featuring weathered
+                wood, sleek metal accents.
+            </p>
 
+            <nav class="grid lg:grid-flow-col grid-cols-1 gap-8 lg:gap-28 mb-12">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Services</a>
+                <a class="link link-hover">Portfolio</a>
+                <a class="link link-hover">Blogs</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <!-- button -->
+            <div class="btn rounded-full bg-lime-400 border-none font-extrabold flex flex-row w-full lg:w-auto ">
+                <a class="text-xl font-extrabold">Book Consult</a>
+                <div class="bg-black rounded-full p-2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+            </div>
+        </footer>
     </footer>
 </body>
 
